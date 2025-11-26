@@ -116,7 +116,7 @@ protected:
 	UPROPERTY()
 	TObjectPtr<UTextureRenderTarget2D> RenderTargetRightEye;
 
-	UPROPERTY()
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Mirror", meta=(AllowPrivateAccess="true"))
 	TObjectPtr<UMaterialInstanceDynamic> MaterialInstanceDynamic;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
